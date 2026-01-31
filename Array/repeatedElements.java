@@ -28,3 +28,5 @@ public class repeatedElements {
         }
     }
 }
+//I do my best I can crack, Company only hire you if they see some profit in you ,
+//  So work hard , Hard Work is the key of Success , Excution>>>>>>idea
