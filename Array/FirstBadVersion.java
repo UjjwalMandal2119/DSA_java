@@ -1,5 +1,5 @@
 // public class FirstBadVersion {
-    
+    //this is a Binary Search Question
 // }
 // // this is the logic that avoid constraints overflow or number overflow
 // /* The isBadVersion API is defined in the parent class VersionControl.
