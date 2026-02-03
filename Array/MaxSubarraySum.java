@@ -5,6 +5,7 @@ public class MaxSubarraySum {
     }
 //two loop using to calulate the sum and returning the maximum value;
 //one loop for the first index and all subArray started from that index
+//This is a bruth force approach it give Time limit Exceeded
     public static int MaxSum(int [] arr){
         int n=arr.length;
         int ans=Integer.MIN_VALUE;
