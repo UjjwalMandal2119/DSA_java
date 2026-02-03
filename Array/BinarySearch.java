@@ -14,6 +14,7 @@ public class BinarySearch {
         int n=BSearch(arr,target);
         System.out.println("elements found in index : " + n);
     }
+    //Method for functioning the Binary Search
     public static int BSearch(int [] arr, int n){
         int lowerIndex=0;
         int HigherIndex=arr.length-1;
