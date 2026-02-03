@@ -10,5 +10,23 @@
 public class BinarySearch {
     public static void main(String args[]){
         int [] arr= {1,2,4,6,7,89,90,100,101};
+        int target =891;
+        int n=BSearch(arr,target);
+        System.out.println("elements found in index : " + n);
+    }
+    public static int BSearch(int [] arr, int n){
+        int lowerIndex=0;
+        int HigherIndex=arr.length-1;
+        while(lowerIndex<=HigherIndex){
+            int mid =(lowerIndex+HigherIndex)/2;
+            if(arr[mid]==n){
+                return mid;
+            }else if(arr[mid]>n){
+                HigherIndex=mid-1;
+            }else{
+                lowerIndex=mid+1;
+            }
+        }
+        return -1;
     }
 }
