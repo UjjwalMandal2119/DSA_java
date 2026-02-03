@@ -18,7 +18,7 @@ public class BinarySearchQuestion {
           int mid=(low+high)/2;
           if(Math.pow(mid,k)<=n){
              ans =mid;
-             low=mid+1;
+             low=mid+1; //ranges maximization
           }else{
             high =mid-1;
           }
