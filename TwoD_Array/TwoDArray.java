@@ -10,5 +10,6 @@ public class TwoDArray {
         System.out.println(arr[0][1]);
 
         int [][] other =arr;
+        System.out.println(other);
    }
 }
