@@ -31,7 +31,7 @@ public class wavePrint {
                     System.out.print(mat[k][i]+ " ");
                 }
             }
-            System.out.println();
+           
         }
     }
 }
