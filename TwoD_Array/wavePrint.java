@@ -1,6 +1,6 @@
 package TwoD_Array;
 import java.util.*;
-public class Print2DMartrix {
+public class wavePrint {
     public static void main (String args[]){
      System.out.println("Enter the matrix size");
      Scanner sc =new Scanner(System.in);
