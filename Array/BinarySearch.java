@@ -15,6 +15,10 @@ public class BinarySearch {
         System.out.println("elements found in index : " + n);
     }
     //Method for functioning the Binary Search
+    //Here we need two pointer concept 
+    //we compare value with mid array value with target value
+    //If value is greater when we shift left side pointer to mid+1;
+    //and if value is less than target value then we move right pointer to mid-1; 
     public static int BSearch(int [] arr, int n){
         int lowerIndex=0;
         int HigherIndex=arr.length-1;
