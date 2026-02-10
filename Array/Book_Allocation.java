@@ -24,7 +24,7 @@ public class Book_Allocation {
         }
         return ans;
     }
-
+// checking that answer is possible or not
     public static boolean isitPossible(int [] page, int nos ,int mid){
        int readpage =0;
        int student=1;
@@ -41,5 +41,6 @@ public class Book_Allocation {
         
        } 
        return true;
+
     }
 }
