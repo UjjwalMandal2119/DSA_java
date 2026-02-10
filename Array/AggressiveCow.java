@@ -39,7 +39,9 @@ import java.util.Scanner;
 public class AggressiveCow {
     public static void main(String args[]){
         Scanner sc =new Scanner(System.in);
-        int nos=sc.nextInt();
+        int t=sc.nextInt();
+        while (t>0) {
+            int nos=sc.nextInt();
         int noc= sc.nextInt();
         int [] stall =new int[nos];
         for(int i=0; i<stall.length; i++){
@@ -47,6 +49,9 @@ public class AggressiveCow {
         }
         Arrays.sort(stall);
         System.out.println("Maximum minimun distance between cows " +MinDistance(stall,noc));
+        t--;
+        }
+        
     }
     public static int MinDistance(int [] stall, int noc){
         int low=stall[0];
