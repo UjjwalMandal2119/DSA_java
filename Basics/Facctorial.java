@@ -24,4 +24,9 @@ public class Facctorial {
             System.out.println();
             System.out.println("Factorial of given number " + fac);
         }
+
+        //recursion
+        public static int Facctorial2(int n){
+            
+        }
 }
