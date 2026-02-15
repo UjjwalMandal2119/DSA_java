@@ -11,19 +11,15 @@ public class PrimeNumberCheck {
          }
          public static boolean isPrimeNumber(int n){
             
-            int count=0;
+            
             //here is iterate from 2 to square root of that number
-            for(int i=2; i<n-1; i++){
+            for(int i=2; i<=Math.sqrt(n); i++){
                 if(n %i==0){
-                    count++;
-                    break;
+                   return false;
                 }
             }
-            //if count is greater than one than is has factors so it can't be a prime number
-            if(count>=1){
-                return false;
-            }else{
-                return true;
+           
+           return true;
             }
-         }
+         
 }
