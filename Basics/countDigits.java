@@ -2,7 +2,7 @@ package Basics;
 
 import java.util.Scanner;
 
-public class countDigits {
+public class CountDigits {
     public static void main(String args[]){
          Scanner sc = new Scanner(System.in);
          System.out.println("Enter the number");
