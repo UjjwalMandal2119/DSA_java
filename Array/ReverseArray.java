@@ -18,6 +18,8 @@ public class ReverseArray {
       reverseArr(arr);
       reverseArr1(arr);
     }
+
+    //two pointer method
     public static void reverseArr(int [] arr){
         int h =arr.length-1;
         int l=0;
@@ -33,6 +35,7 @@ public class ReverseArray {
             System.out.print(arr[i]+ " ");
         }
     }
+    //with an extra array
     public static void reverseArr1(int [] arr){
         int n=arr.length;
         int [] rev =new int[n];
