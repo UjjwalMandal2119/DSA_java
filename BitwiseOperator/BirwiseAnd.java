@@ -23,7 +23,7 @@ public class BirwiseAnd {
 
     //we can use bitwise and for odd and even chech also
 public static void evenOrOdd(int c){
- int d =(c &1);
+ int d =(c &1);  //even number first binary digit is always 0 and odd digit always 1 so 0 $ 1 =0 and 1&1=1;
  if(d==1)
     System.out.println("odd");
 else
