@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class BitwiseSHIFT {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        System.out.println("enter the first number");
+        System.out.println("enter the  number");
         int n1=sc.nextInt();
        
         
