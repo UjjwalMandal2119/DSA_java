@@ -14,8 +14,9 @@ public class BitwiseNOT {
     int c2 =~n2;
     System.out.println(Integer.toBinaryString(n1));
     System.out.println(Integer.toBinaryString(n2));
-    System.out.println(Integer.toBinaryString(c1));
+   
     System.out.println(c1);
+    System.out.println(Integer.toBinaryString(n2));
     System.out.println(c2);
     System.out.println(Integer.toBinaryString(c2));
 
