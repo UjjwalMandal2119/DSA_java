@@ -23,7 +23,7 @@ public class PrintPalindrome_substring {
             }
            
         }
-        System.out.println("total number of palindrome" + cnt);
+        System.out.println("total number of palindrome " + cnt);
     }
     public static boolean PalindromeCheck(String s){
         int l=0;
