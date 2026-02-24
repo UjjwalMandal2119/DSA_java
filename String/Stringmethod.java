@@ -14,5 +14,7 @@ public class Stringmethod {
         System.out.println(str1 == str2); //Here is compare address of String variable; so it return false; both are store in different location in heap one is in pool 'str1';
 
         System.out.println(str1==str3);// it give true because both are in pool
+
+        System.out.println(str2 ==str4);
     }
 }
