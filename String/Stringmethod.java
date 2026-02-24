@@ -7,6 +7,8 @@ public class Stringmethod {
          String str3="Hello";
         String str4= new String("Hello");
 
+        String s = "Ujjwal Mandal";
+
         int a = 9;
         int b= 9;
         System.out.println(a==b); //in int is compare value of variable;
@@ -18,5 +20,11 @@ public class Stringmethod {
         System.out.println(str2 ==str4); //in heap different location/different memory address
 
         System.out.println(str1.equals(str2)); //equal() method compare contents 
+
+        System.out.println(s.substring(0, 6));  // it print from index 0 to lastIndex-1// last wala index include nhi hota h
+
+        System.out.println(s.substring(0));  //it print from the given index to the last index o/p=Ujjwal Mandal
+
+        System.out.println(s.substring(7)); //
     }
 }

@@ -10,13 +10,15 @@ public class Equals {
     }
 
     public static boolean EqualCheck(String s1, String s2){
-         if(s1.length()!=s2.length()) return false;
+         if(s1.length()!=s2.length()) return false; //first we checking the length;
 
-         if(s1 ==s2) return true;
+         if(s1 ==s2) return true;  //checking the same address
 
-         for(int i=0; i<s1.length(); i++){
+         for(int i=0; i<s1.length(); i++){    //now comparing the contents bcz it's imp same string may have different location one in string pool, heap
             if(s1.charAt(i)!=s2.charAt(i)) return false;
          }
          return true;
     }
 }
+
+//in boolean method only one return work at one call, if first return occure than it not run the remaining lines od code.
