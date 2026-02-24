@@ -15,6 +15,8 @@ public class Stringmethod {
 
         System.out.println(str1==str3);// it give true because both are in pool
 
-        System.out.println(str2 ==str4);
+        System.out.println(str2 ==str4); //in heap different location/different memory address
+
+        System.out.println(str1.equals(str2)); //equal() method compare contents 
     }
 }
