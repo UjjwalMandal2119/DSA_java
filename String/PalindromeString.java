@@ -1,8 +1,11 @@
 package String;
-
+import java.util.*;
 public class PalindromeString {
     public static void main(String[] args) {
-        String s ="nitin";
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the string");
+
+        String s =sc.next();
         int l=0;
         int h=s.length() -1;
         String rev ="";
@@ -21,7 +24,7 @@ public class PalindromeString {
     //two pointer approach
     public static boolean PalindromeCheck(String s){
         int l=0;
-        int h=s.length()-1;
+        int h=s.length()-1; //I need index;
         while(l<h){
             if(s.charAt(l)!=s.charAt(h)){
                 return false;
