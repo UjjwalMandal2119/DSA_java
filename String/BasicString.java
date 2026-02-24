@@ -10,7 +10,17 @@ public class BasicString {
         System.out.println(str2);
         System.out.println(str3);
         System.out.println(str4);
-        System.out.println(str1.length());
+        System.out.println(str1.length());  //length() is a method to find the length of the string
+        System.out.println(str1.charAt(1));  //charAt(index) to print the character of that index of given string
+
+        //String has also a zero '0' based indexing
+
+        //addition of two string
+         String s1= "Hello";
+         String s2= "Everyone";
+
+         s1=s1 +s2;
+         System.out.println(s1);
     }
 }
 //we cannot print address in String 
