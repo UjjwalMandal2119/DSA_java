@@ -25,6 +25,8 @@ public class Stringmethod {
 
         System.out.println(s.substring(0));  //it print from the given index to the last index o/p=Ujjwal Mandal
 
-        System.out.println(s.substring(7)); //
+        System.out.println(s.substring(7)); //it print from the given index =7 to the last index 0/p =Mandal
+
+        System.out.println(s.subSequence(2, 2)); //it print a blank string  ek bol raha a include karne aur dusra bol raha h exclude karne
     }
 }
