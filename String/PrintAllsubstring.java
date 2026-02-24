@@ -8,7 +8,7 @@ public class PrintAllsubstring {
         Printsubstring(s);
     }
     public static void Printsubstring(String s) {
-        for(int i=0; i<s.length(); i++){
+        for(int i=0; i<s.length(); i++){                   //two loop approach
             for(int j=i+1; j<=s.length(); j++){
                 System.out.println(s.substring(i,j));
             }
