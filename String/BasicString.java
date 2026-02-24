@@ -23,7 +23,8 @@ public class BasicString {
          s1 =s1.concat(s2); //concat() method to add string
          System.out.println(s1);
 
-         System.out.println(str1 == str2.intern());//with intern() things get changes
+         System.out.println(str1 == str2.intern());//with intern() things get changes it send addess to pool
+         System.out.println(str1.intern()== str2);
     }
 }
 //we cannot print address in String 
