@@ -19,7 +19,8 @@ public class BasicString {
          String s1= "Hello";
          String s2= "Everyone";
 
-         s1=s1 +s2;
+         s1=s1 +s2;  // s1+s2=s1s2 first come firsr serve
+         s1 =s1.concat(s2); //concat() method to add string
          System.out.println(s1);
     }
 }
