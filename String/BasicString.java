@@ -22,6 +22,8 @@ public class BasicString {
          s1=s1 +s2;  // s1+s2=s1s2 first come firsr serve
          s1 =s1.concat(s2); //concat() method to add string
          System.out.println(s1);
+
+         System.out.println(str1 == str2.intern());//with intern() things get changes
     }
 }
 //we cannot print address in String 
