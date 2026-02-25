@@ -1,5 +1,5 @@
 package String;
-
+//how string forming addition with numbers and strings
 public class BasicString2 {
     public static void main(String[] args) {
         String s ="hello";
@@ -8,3 +8,5 @@ public class BasicString2 {
         System.out.println(10 +s +(30 +40)); //operator precceding
     }
 }
+
+
