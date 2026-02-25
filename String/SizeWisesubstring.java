@@ -16,6 +16,7 @@ public class SizeWisesubstring {
             int i=j-len;
             System.out.println(s.subSequence(i, j));
         }
+        System.out.println();
        }
     }
 }
