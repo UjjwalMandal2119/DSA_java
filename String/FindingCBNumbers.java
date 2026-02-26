@@ -27,17 +27,57 @@ public class FindingCBNumbers {
         Scanner sc =new Scanner(System.in);
         System.out.println("enter the string");
         String s =sc.next();
-        PrintEqualsubstring(s);
+       
+        System.out.println(PrintSubstring(s));
+       
     }
-    private static void PrintEqualsubstring(String s){
-       //for this we need one length at time 
-       for(int len =1; len<=s.length(); len++){
-        for(int j=len;j<=s.length();j++){
-            int i=j-len;
-            String s1=s.subSequence(i, j);
+    public static int PrintSubstring(String s){
+        int count =0;
+        boolean [] visited = new boolean[s.length()];
+        for(int len=1; len<=s.length(); len++){
+            for(int j=len; j<=s.length(); j++){
+                int i=j-len;
+                String s1=s.substring(i,j);
+                //numberstring ko number main covert karna hai to hm Integer.parseInt() method use karte h
+                //long main covert karna hai to Long.parseLong()
+                if(IsCbNumber(Long.parseLong(s1) )==true && Isvalid(visited, i, j-1)==true){
+                 count++;
+                 for(int k=i; k<j; k++){
+                     visited[k] =true;
+                 }
+                }
+
+            }
         }
-      
-       }
+        return count;
     }
+    //checking that another CB number doesn't contains the previous numbers digits ,or we can say that substring must not be same for both number
+    private static boolean Isvalid(boolean [] visited, int i, int j){
+        for(; i<j; i++){
+            if(visited[i] == true){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //checking  for CB number true or false;
+   public static boolean IsCbNumber(long num){
+    if(num ==0||num == 1) return false;
+
+   int [] arr ={2, 3, 5, 7, 11, 13,  17, 19, 23, 29};
+   for(int idx =0; idx<arr.length; idx++){
+    if(arr[idx]==num){
+        return true;
+    }
+   }
+   for (int idx = 0; idx < arr.length; idx++) {
+       if(num % arr[idx] ==0){
+        return false;
+       }
+       
+   }
+   return true;
+   }
     
 }
