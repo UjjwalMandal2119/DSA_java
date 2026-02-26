@@ -48,7 +48,7 @@ public class SortIntegersby1sBit {
         }
         return count;
     }
-
+//counting numbers of 1's using AND operator;
     public static int counts(int n){
         int count=0;
         while(n>0){
