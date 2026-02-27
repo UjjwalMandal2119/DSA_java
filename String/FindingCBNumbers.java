@@ -40,7 +40,7 @@ public class FindingCBNumbers {
                 String s1=s.substring(i,j);
                 //numberstring ko number main covert karna hai to hm Integer.parseInt() method use karte h
                 //long main covert karna hai to Long.parseLong()
-                if(IsCbNumber(Long.parseLong(s1) )==true && Isvalid(visited, i, j-1)==true){
+                if(IsCbNumber(Long.parseLong(s1) )==true && Isvalid(visited, i, j)==true){
                  count++;
                  for(int k=i; k<j; k++){
                      visited[k] =true;
