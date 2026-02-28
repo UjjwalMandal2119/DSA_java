@@ -24,5 +24,16 @@ public class ArrayList_Working {
         for(int n: list){
             System.out.print(n+" ");
         }
+        int [] arr ={1, 2,3,4,5,6};
+        for(int n: arr){
+            System.out.print(n + " ");
+        }
+        System.out.println();
+
+        //for character Array
+        char [] ch={'a', 'e', 'i', 'o', 'u'};
+        for(char c: ch){
+            System.out.print(c + " ");
+        }
     }
 }
