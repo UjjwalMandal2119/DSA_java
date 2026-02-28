@@ -23,8 +23,10 @@ public class Basics {
         Integer c2= 15;
         Integer c3 =157;
         Integer c4 =157;
-        System.out.println(c1 == c2);  //true  Integer Cache  Java internally maintains a cache for -128  to  127
+        System.out.println(c1 == c2);  //true  Integer Cache  Java internally maintains a cache for -128  to  127  ,Short, Integer, Long
         System.out.println(c3 == c4); //false; 157 is NOT between -128 to 127 So Java creates NEW objects every time.
+        // == adress compare karta h wrapper class
+        System.out.println(c3.equals(c4)); // ab value compare hoga  O/P=true;
 
     }
 }
