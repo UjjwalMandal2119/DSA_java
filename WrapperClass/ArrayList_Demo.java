@@ -2,6 +2,7 @@ package WrapperClass;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayList_Demo { //ArrayList ek class h ,size ka limitation nhi hota
     public static void main(String[] args) {
@@ -20,8 +21,21 @@ public class ArrayList_Demo { //ArrayList ek class h ,size ka limitation nhi hot
         list.add(50);
         // insertion in between
         //concept of indexing aur hame index ka range pta karna hoga
-        list.add(2, -6); //put the index where we have to insert the value
+        //agar list empty ho tab element stating main hi jayega
+        list.add(2, -6); //put the index where we have to insert the value  (0 to size)
         System.out.println(list); 
 
+        //get  range (0, size -1)
+       //jis index ka data chahiye us index ko pass kar dena h
+       
+       System.out.println(list.get(3));
+       //sorting
+       Collections.sort(list);  //inbuild function
+       System.out.println(list);
+
+       //reverse 
+       Collections.reverse(list);  //inbuild function
+       System.out.println(list);
+       
     }
 }
