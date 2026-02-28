@@ -16,7 +16,11 @@ public class ArrayList_Working {
             System.out.print(list.get(i) + " ");
         }
           System.out.println();
-        //for each loop
+        //for each loop 
+        //it direct retrive the value one by one
+        //jab tak value rahega ye chalta rahega
+        //ye value read karta h
+
         for(int n: list){
             System.out.print(n+" ");
         }
