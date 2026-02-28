@@ -37,9 +37,16 @@ public class ArrayList_Demo { //ArrayList ek class h ,size ka limitation nhi hot
        Collections.reverse(list);  //inbuild function reverse karne ke liye hota h
        System.out.println(list);
 
-       //set value update ke liye use hota h override hota h
+       //set 
+       // value update ke liye use hota h override hota h
 
        list.set(3, 90);
+       System.out.println(list);
+
+       //remove 
+       //ye kisi index ka value remove karne ke liye use hota h  aur list adjust ho jata h
+
+       list.remove(3); // range (0, size-1)
        System.out.println(list);
        
     }
