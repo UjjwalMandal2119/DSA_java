@@ -46,8 +46,15 @@ public class ArrayList_Demo { //ArrayList ek class h ,size ka limitation nhi hot
        //remove 
        //ye kisi index ka value remove karne ke liye use hota h  aur list adjust ho jata h
 
-       list.remove(3); // range (0, size-1)
+       int n1=list.remove(3); // range (0, size-1)
+       System.out.println(n1);
        System.out.println(list);
+
+       //get
+       //kisi index ke element pta karne ke liye use hota h
+       
+       int n= list.get(4);
+       System.out.println(n);
        
     }
 }
