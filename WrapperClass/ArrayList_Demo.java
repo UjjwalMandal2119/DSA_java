@@ -30,11 +30,16 @@ public class ArrayList_Demo { //ArrayList ek class h ,size ka limitation nhi hot
        
        System.out.println(list.get(3));
        //sorting
-       Collections.sort(list);  //inbuild function
+       Collections.sort(list);  //inbuild function sort karne ke liye hota h
        System.out.println(list);
 
        //reverse 
-       Collections.reverse(list);  //inbuild function
+       Collections.reverse(list);  //inbuild function reverse karne ke liye hota h
+       System.out.println(list);
+
+       //set value update ke liye use hota h override hota h
+
+       list.set(3, 90);
        System.out.println(list);
        
     }
