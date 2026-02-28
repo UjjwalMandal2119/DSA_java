@@ -26,6 +26,7 @@ public class KsizeSubArray {
         }
         ans=Math.max(ans, sum);
      }
+     //for printing the subarray
      for(int s=l;s<=h; s++){
         System.out.print(arr[s] + " ");
      }
