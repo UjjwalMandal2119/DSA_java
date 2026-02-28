@@ -16,7 +16,7 @@ public class subArrayProductLessThanK {
             //growing
                p*=arr[ei];
             //Shrinking
-            while(p>=k){
+            while(p>=k && si <= ei){
                 p/=arr[si];
                 si++;
             }   
