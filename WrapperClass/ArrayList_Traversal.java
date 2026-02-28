@@ -2,7 +2,7 @@ package WrapperClass;
 
 import java.util.ArrayList;
 
-public class ArrayList_Working {
+public class ArrayList_Traversal {
     public static void main(String[] args) {
         ArrayList<Integer> list =new ArrayList<>();
         list.add(10);
@@ -20,6 +20,8 @@ public class ArrayList_Working {
         //it direct retrive the value one by one
         //jab tak value rahega ye chalta rahega
         //ye value read karta h
+        //ye ulta nhi chalta
+        //normal for loop index par iterate karta h
 
         for(int n: list){
             System.out.print(n+" ");
