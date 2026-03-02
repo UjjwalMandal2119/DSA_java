@@ -1,6 +1,15 @@
+
+import java.util.Scanner;
+
 public class TrappingRainWater {
     public static void main(String args[]){
-        int [] arr={0,1,0,2,1,0,1,3,2,1,2,1};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int n=sc.nextInt();
+        int [] arr = new int[n];
+        for(int i=0; i<n ;i++){
+            arr[i] = sc.nextInt();
+        }
         TapWater(arr);
     }
   public static void TapWater(int []arr){
