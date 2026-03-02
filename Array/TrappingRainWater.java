@@ -25,6 +25,9 @@ public class TrappingRainWater {
     for(int j=n-2;j>=0; j--){
         rightMax[j]= Math.max(rightMax[j+1], arr[j]);
     }
+
+    //Water trapped at index
+    First & last index trap 0 water
     int sum=0;
     for(int i=0;i<n; i++){
         sum+=Math.min(leftMax[i], rightMax[i])-arr[i];
