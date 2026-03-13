@@ -1,5 +1,7 @@
 package Operator.Loop;
 
+import java.util.ArrayList;
+
 public class loop {
     public static void main(String arg[]){
         int i;
@@ -21,5 +23,17 @@ public class loop {
            System.out.println(i);
            i++;
        } while (i<=10);     
+
+       ArrayList <String> mylist = new ArrayList<>();  
+       mylist.add("Delhi");
+       mylist.add("Ranchi");
+       mylist.add("Lucknow");
+       mylist.add("Ranchi");
+       mylist.add("Kolkata");
+
+       for(String s : mylist){
+        System.out.println(s);
+       }
+
     }
 }
