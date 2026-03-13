@@ -9,9 +9,11 @@ public class loop {
             i++; //increment
         }
         //(initialization ; condition; increment)
-        for(int j=0; j<=10; j++){
+        for(int j=0; j<=10; j++){ //we cann also declare the variable in for loop , block scope
             System.out.println(j);
         }
+        for(i=1; i<=5; i++);
+        System.out.println(i);
 
     }
 }
