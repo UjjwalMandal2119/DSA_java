@@ -16,5 +16,10 @@ public class loop {
         System.out.println(i);
          for(i =5; i<10; i++)  //bydefault ek statement ko read karega har ek loop
             System.out.println(i);
+
+       do { 
+           System.out.println(i);
+           i++;
+       } while (i<=10);     
     }
 }
