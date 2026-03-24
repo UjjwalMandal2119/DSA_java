@@ -15,6 +15,12 @@ public class IntersectionOfTwoArrayII {
 
          
         }
+        // approach
+        // sabse pahele koi bhi ek array ke elements ko hashmap main store kara liye with frequency
+        // uske bad second element se compare kar rahe hai ki 
+        // agar hai to -1 kar de rahe h 
+        // ek condition bhi ki element ki frequency >0 honi chahiye
+
          public static int[] Intersect(int [] nums1, int [] nums2){
           HashMap<Integer, Integer> map =new HashMap<>();
             for(int i=0; i<nums1.length; i++){
@@ -24,6 +30,9 @@ public class IntersectionOfTwoArrayII {
                    map.put(nums1[i], 1);
                 }
             }  
+            //arraylist used for storing common element
+            // kiyoki hame first main total element malum nhi h
+            
             ArrayList<Integer> list = new ArrayList<>();
             for(int i=0; i<nums2.length; i++){
                 if(map.containsKey(nums2[i]) && map.get(nums2[i])>0){
