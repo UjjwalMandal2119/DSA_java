@@ -1,8 +1,8 @@
-package recursion;
+package Basics;
 
 import java.util.Scanner;
 
-public class tester {
+public class AreaOfCircle {
     public static void main(String args[]){
     System.out.println("enter the radius of circle");
 		Scanner sc= new Scanner(System.in);
