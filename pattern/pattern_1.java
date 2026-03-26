@@ -1,4 +1,10 @@
 import java.util.Scanner;
+// 5
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
+// * * * * * 
 public class pattern_1 {
     public static void main(String args[]){
         System.out.println("enter the number of rows");

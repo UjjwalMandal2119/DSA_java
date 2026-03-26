@@ -15,7 +15,7 @@ public class SumOfDigits {
            int n= Math.abs(r);
             while(n>0){
                 int rem=n%10;
-                sum =sum + rem;
+                sum =sum + rem; //adding a digit at a time last digit
                 n=n/10;
             }
             return sum;
