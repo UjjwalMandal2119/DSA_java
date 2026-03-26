@@ -9,6 +9,8 @@ public class GCD {
          int n1= sc.nextInt();
          int n2= sc.nextInt();
          System.out.println(greatestCommonDivisor(n1,n2));
+         int lcd=n1*n2/greatestCommonDivisor(n1, n2);
+         System.out.println("lcd of two number " + lcd);
 
     }
     public static int greatestCommonDivisor(int n1, int n2){
