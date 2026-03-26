@@ -1,12 +1,7 @@
-import java.util.*;
-// 5
-//         1 
-//       1 2 1
-//     1 2 3 2 1
-//   1 2 3 4 3 2 1
-// 1 2 3 4 5 4 3 2 1
-public class pattern_27 {
-    public static void main(String arg[]){
+import java.util.Scanner;
+
+public class pattern_28 {
+     public static void main(String arg[]){
         System.out.println("enter the number of rows");
         Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
@@ -21,7 +16,7 @@ public class pattern_27 {
             }
             //for number print
             int j=1;
-            int val=1;
+            int val=row;
             while(j<=num){
                 System.out.print(val+" ");
                 //vertical mirror concept
@@ -39,5 +34,4 @@ public class pattern_27 {
             System.out.println();
         }
     }
-    
 }

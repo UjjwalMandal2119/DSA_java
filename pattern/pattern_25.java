@@ -11,7 +11,7 @@ public class pattern_25 {
     while(row<=n){
         int i=1;
         while(i<=space){
-            System.out.print("\t");
+            System.out.print("\t"); //\t for four spaces also called tab separated
             i++;
         }
         int j=1;

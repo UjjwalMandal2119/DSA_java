@@ -5,44 +5,40 @@ public class pattern_20 {
            Scanner sc=new Scanner(System.in);
            int n=sc.nextInt();
            int row=1;
-           int star=n/2;
-           int space=1;
+         
+           int space1=n/2;
+           int space2= -1;
            while(row<=n){
+             //space
             int i=1;
-            while(i<=star){
-                System.out.print("* ");
+            while(i<=space1){
+                System.out.print("  ");
                 i++;
             }
-            //space
+            //star
+            System.out.print("* ");
+
+            //between space
             int j=1;
-            while(j<=2*space-1){
+            while(j<=space2){
                 System.out.print("  ");
                 j++;
             }
             //star
-            int k=1;
-            while(k<=star){
-                System.out.print("* ");
-                k++;
+            if(row >=2 && row <n){
+             System.out.print("* ");
             }
+           
             //next row preparation
+            //and mirror preparation
+            if(row<= n/2){
+                space1--;
+                space2+=2;
+            }else{
+                space1++;
+                space2-=2;
+            }
             System.out.println();
-            if(row<n/2){
-                star--;
-            
-            }else{
-                star++;
-            
-            }
-            if(row==n/2+1){
-                star=1;
-            }
-            if(row<=n/2+1){
-                space++;
-            }else{
-                space--;
-            }
-            
             row++;
 
            }
