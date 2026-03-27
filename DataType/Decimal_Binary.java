@@ -14,9 +14,9 @@ public class Decimal_Binary {
         int mul=1;
         int sum=0;
         while(n>0){
-            int rem=n%2;
+            int rem=n%2;  //base 2
             sum = sum + rem*mul;
-            mul = mul*10;
+            mul = mul*10; //for decimal
             n=n/2;
         }
         System.out.println(sum);
