@@ -1,5 +1,7 @@
 package DataType;
 
+import java.util.Scanner;
+
 public class Data_Type2 {
     public static void main(String[] args) {
         int x=5; //hard core value is caleed literals and it's type is  Integer
@@ -17,6 +19,12 @@ public class Data_Type2 {
         System.out.println(b);
        // long l1=10000000000 ;    //(10¹⁰) is greater than Integer.MAX_VALUE, so the compiler complains before even assigning it to long.
        long l1=100000000000l;//we must tell Java that the literal is a long by adding L (or l) at the end:
+
+       Scanner sc = new Scanner(System.in);
+       long l2= sc.nextLong();
+       int i3=sc.nextInt();
+       System.out.println(l2);
+       System.out.println(i3);
 
     }
 }
