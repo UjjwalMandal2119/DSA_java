@@ -21,7 +21,7 @@ public class Decimal_Binary {
     }
    
     public static void BtoD(int num) {
-       
+        //java inbuild function 
         String binary = Integer.toBinaryString(num);
         System.out.println(binary);
     }
