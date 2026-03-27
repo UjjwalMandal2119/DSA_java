@@ -15,7 +15,7 @@ public class Binary_Decimal {
             n=n/10;
 
         }
-        System.out.print("Decimal form of given number is:-"+ sum);
+        System.out.print("Decimal form of given number is: "+ sum);
     }
     
 }
