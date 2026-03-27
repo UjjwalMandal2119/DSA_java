@@ -8,8 +8,20 @@ public class Decimal_Binary {
         int n=sc.nextInt();
         System.out.println("Binary to given Number " + BinaryToDecimal(n));
         BtoD(n);
+        BinaryToDecimal_multiplication_10(n);
     }
-
+    public static void BinaryToDecimal_multiplication_10(int n){
+        int mul=1;
+        int sum=0;
+        while(n>0){
+            int rem=n%2;
+            sum = sum + rem*mul;
+            mul = mul*10;
+            n=n/2;
+        }
+        System.out.println(sum);
+    }
+  //using a empty String
     public static String BinaryToDecimal(int n){
         String Binary ="";
         while(n>0){
