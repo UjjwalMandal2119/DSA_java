@@ -11,3 +11,7 @@ public class basic_function_2 {
         System.out.println(c);
     }
 }
+//   java main call by value hota h
+//   Call by value means:
+
+// A copy of the variable is passed to the function, not the origin
