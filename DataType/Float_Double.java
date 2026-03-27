@@ -7,5 +7,8 @@ public class Float_Double {
         d=f;
         boolean b = true;
         boolean f1=false;
+
+        int c=(int)((5.0/9)*(0-32)); //C to F conversion formula
+        System.out.println(c);
     }
 }
