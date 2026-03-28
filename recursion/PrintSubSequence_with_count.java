@@ -14,7 +14,7 @@ public class PrintSubSequence_with_count {
 
     //first way
 
-    
+
     static int count =0;  
     public static void  PrintSubSequenceCount1(String s, String ans){
         if(s.length()==0){
@@ -34,7 +34,7 @@ public class PrintSubSequence_with_count {
 
     public static int  PrintSubSequenceCount2(String s, String ans){
         if(s.length()==0){
-            System.out.println(ans + " ");
+            System.out.print(ans + " ");
             
             return 1;
         }
