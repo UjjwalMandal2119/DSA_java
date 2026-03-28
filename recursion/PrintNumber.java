@@ -7,13 +7,14 @@ public class PrintNumber {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the number");
         int n= sc.nextInt();
-        PrintNumber(n);
+        PrintNum(n);
     }
-    public static void PrintNumber(int n){
+    public static void PrintNum(int n){
       if(n==0){
         return;
       }
+       PrintNum(n-1);
       System.out.println(n);
-      PrintNumber(n-1);
+     
     }
 }
