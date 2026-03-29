@@ -39,7 +39,7 @@ public class PrintSubSequence_with_count {
             return 1;
         }
         char ch=s.charAt(0);
-      int a1=  PrintSubSequenceCount2(s.substring(1), ans);
+        int a1=  PrintSubSequenceCount2(s.substring(1), ans);
         int b1=PrintSubSequenceCount2(s.substring(1), ans +ch);
       return a1+b1;
     }
