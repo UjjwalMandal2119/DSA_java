@@ -8,7 +8,7 @@ public class regularCostomer {
         int unit=2;
         int perUnitPrice=10;
         int discountforRegular=5;
-        if(customer==regular){
+        if(customer=="regular"){
 
         }
     }
