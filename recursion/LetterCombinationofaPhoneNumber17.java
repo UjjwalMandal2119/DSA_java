@@ -1,4 +1,4 @@
-package Hash;
+package Recursion;
 
 public class LetterCombinationofaPhoneNumber17 {
      
