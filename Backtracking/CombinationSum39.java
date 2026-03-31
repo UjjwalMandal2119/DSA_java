@@ -8,18 +8,21 @@ public class CombinationSum39 {
         int [] coin= {2, 1, 3,5};
         int amount =4;
         List<Integer> ll= new ArrayList<>();
-        Combination(coin, amount,ll, 0);
+        List<List<Integer>> ans = new ArrayList<>();
+        Combination(coin, amount,ll, 0, ans);
+        System.out.println(ans);
     }
-    public static void Combination(int[] coin, int amount, List<Integer> ll, int idx){
+    public static void Combination(int[] coin, int amount, List<Integer> ll, int idx, List<List<Integer>> ans){
         if(amount ==0){
             System.out.println(ll);
+            ans.add(new ArrayList<Integer>(ll));
             return;
         }
       for(int i=idx; i<coin.length; i++){
         if(amount >=coin[i]){
             //amount -=coin[i];
             ll.add(coin[i]);
-            Combination(coin, amount-coin[i], ll, i);
+            Combination(coin, amount-coin[i], ll, i, ans);
              //amount +=coin[i];
              ll.remove(ll.size()-1);
         }
