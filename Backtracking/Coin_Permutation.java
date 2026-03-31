@@ -5,8 +5,12 @@ public class Coin_Permutation {
         int[] coin ={2,1,3,5};
         int amount =4;
         Permutation( coin, amount, "");
+        System.out.println("with backtracking ");
         PermutationB( coin, amount, "");
     }
+
+//with recursion
+
     public static void Permutation( int [] coin, int amount, String ans){
         if(amount == 0){
             System.out.println(ans);
