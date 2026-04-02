@@ -2,7 +2,7 @@ package Basics;
 
 import java.util.Scanner;
 
-import lecture_4.prime_number;
+
 
 // The Sieve of Eratosthenes is an efficient algorithm used to find all prime numbers up to a given number n by repeatedly marking multiples of prime numbers as non-prime.
 // Find all primes ≤ n
