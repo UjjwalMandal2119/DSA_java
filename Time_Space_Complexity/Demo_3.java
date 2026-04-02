@@ -17,3 +17,4 @@ public class Demo_3 {
         return -1;
     }
 }
+//time complexity O(n) n= total work here n=8;
