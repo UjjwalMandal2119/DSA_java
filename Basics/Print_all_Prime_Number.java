@@ -20,7 +20,7 @@ public class Print_all_Prime_Number {
     }
  }
  public static boolean isPrime(int n){
-    for(int i=2;i<=Math.sqrt(n); i++){
+    for(int i=2;i<=Math.sqrt(n); i++){  //i*i<=n
         if(n%i==0){
             return false;
            
