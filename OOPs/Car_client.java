@@ -7,11 +7,13 @@ package OOPs;
         // c.price =5812;  we can't directly access this as these are private
 
         // c.price = -34;
-        c.SetColor("white");
+        c.setColor("white");
         c.DisplayCar();
-        c.SetPrice(12000000);
+        c.setPrice(12000000);
         c.DisplayCar();
-        c.SetSpeed(350);
+        c.setSpeed(-350);
         c.DisplayCar();
+        System.out.println(c.getColor());
+        System.out.println(c1.getSpeed());
     }
 }
