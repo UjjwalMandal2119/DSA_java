@@ -12,7 +12,7 @@ public class selectionSort {
             int mini=i;
             for(int j=i+1; j<arr.length;j++){
                 if(arr[j]<arr[mini]){
-                    mini=j;
+                    mini=j;   //isme index maintain karte h this the index for least element present in the array
                 }
             }
             int temp=arr[i];
