@@ -1,7 +1,7 @@
 package Stack_and_Queue;
 
 public class Apna_Stack {
-   private  int [] arr;
+   protected   int [] arr;
    private int top =-1;
 
    public Apna_Stack(){

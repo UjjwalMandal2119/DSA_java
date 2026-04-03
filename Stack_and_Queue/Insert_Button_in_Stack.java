@@ -1,5 +1,5 @@
 package Stack_and_Queue;
- import java.util.*;
+ import java.util.Stack;
 public class Insert_Button_in_Stack {
     public static void main(String[] args) {
         Stack <Integer> st = new Stack<>();
