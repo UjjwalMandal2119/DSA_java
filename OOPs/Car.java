@@ -19,12 +19,29 @@ public class Car {
         this.color =color;
     }
 
-    public void setPrice(int price){
-         if(price <0){
-            System.out.println("Invalid Input");
-            return ;
+    // public void setPrice(int price) throws Exception{
+    //      if(price <0){
+    //         // System.out.println("Invalid Input");
+    //         // return ;
+    //         //in java there is excption class for handling the exception
+    //       throw new Exception("Price -ve nhi hota h");
+    //     }
+    //     this.price =price;
+    // }
+      public void setPrice(int price) {
+        try {
+             if(price <0){
+            // System.out.println("Invalid Input");
+            // return ;
+            //in java there is excption class for handling the exception
+          throw new Exception("Price -ve nhi hota h");
         }
         this.price =price;
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally{
+            System.out.println("I am in finaly");
+        }
     }
 
     public void setSpeed(int speed){
