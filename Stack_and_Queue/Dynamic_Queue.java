@@ -1,6 +1,6 @@
 package Stack_and_Queue;
 
-public class Dynamic_Queue extends Queue {
+public class Dynamic_Queue extends Apna_Queue {
     @Override
     public void Enqueue(int item) throws Exception {
               if(isFull()){        

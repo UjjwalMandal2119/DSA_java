@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java String Notes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    code {
+      background: #eee;
+      padding: 5px;
+      display: block;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #3498db;
+      color: white;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .highlight {
+      background: #ffeaa7;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Java String Notes & Formulas</h1>
+
+<div class="section">
+  <h2>1. Basics</h2>
+  <p><strong>Definition:</strong> String is an immutable sequence of characters.</p>
+  <p class="highlight">String is a class and a non-primitive data type.</p>
+
+  <h3>Creation:</h3>
+  <code>
+String s1 = "Hello";              // String Pool  
+String s2 = new String("Hello");  // Heap Memory
+  </code>
+</div>
+
+<div class="section">
+  <h2>2. Common String Methods</h2>
+  <table>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+      <th>Example</th>
+      <th>Output</th>
+    </tr>
+    <tr><td>length()</td><td>Returns length</td><td>"Java".length()</td><td>4</td></tr>
+    <tr><td>charAt(i)</td><td>Character at index</td><td>"Java".charAt(2)</td><td>v</td></tr>
+    <tr><td>substring()</td><td>Extract substring</td><td>"Java".substring(1,3)</td><td>av</td></tr>
+    <tr><td>toUpperCase()</td><td>Convert to uppercase</td><td>"java".toUpperCase()</td><td>JAVA</td></tr>
+    <tr><td>toLowerCase()</td><td>Convert to lowercase</td><td>"JAVA".toLowerCase()</td><td>java</td></tr>
+    <tr><td>trim()</td><td>Remove spaces</td><td>" hi ".trim()</td><td>hi</td></tr>
+    <tr><td>replace()</td><td>Replace characters</td><td>"java".replace('a','o')</td><td>jovo</td></tr>
+    <tr><td>contains()</td><td>Check substring</td><td>"hello".contains("ell")</td><td>true</td></tr>
+    <tr><td>startsWith()</td><td>Check prefix</td><td>"hello".startsWith("he")</td><td>true</td></tr>
+    <tr><td>endsWith()</td><td>Check suffix</td><td>"hello".endsWith("lo")</td><td>true</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <h2>3. Important Concepts</h2>
+
+  <h3>Reverse a String</h3>
+  <code>
+String rev = new StringBuilder(str).reverse().toString();
+  </code>
+
+  <h3>Check Palindrome</h3>
+  <code>
+boolean isPal = str.equals(new StringBuilder(str).reverse().toString());
+  </code>
+
+  <h3>Remove Spaces</h3>
+  <code>
+String noSpaces = str.replaceAll("\\s+", "");
+  </code>
+
+  <h3>String to Char Array</h3>
+  <code>
+char[] arr = str.toCharArray();
+  </code>
+</div>
+
+<div class="section">
+  <h2>4. StringBuilder & StringBuffer</h2>
+  <p><strong>StringBuilder:</strong> Fast, not thread-safe</p>
+  <p><strong>StringBuffer:</strong> Thread-safe, slower</p>
+
+  <code>
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb); // Hello World
+  </code>
+</div>
+
+<div class="section">
+  <h2>5. == vs equals()</h2>
+
+  <p><strong>== :</strong> Compares reference (memory)</p>
+  <p><strong>equals() :</strong> Compares content</p>
+
+  <code>
+String a = new String("Hello");
+String b = new String("Hello");
+
+System.out.println(a == b);       // false
+System.out.println(a.equals(b));  // true
+  </code>
+</div>
+
+<div class="section">
+  <h2>6. Key Notes</h2>
+  <ul>
+    <li>String is immutable</li>
+    <li>Stored in String Pool</li>
+    <li>"==" checks memory</li>
+    <li>equals() checks value</li>
+  </ul>
+</div>
+
+</body>
+</html>

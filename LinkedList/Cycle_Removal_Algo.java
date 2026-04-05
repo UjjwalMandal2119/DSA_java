@@ -78,7 +78,7 @@ public class Cycle_Removal_Algo {
     }
 
     //code for cycle removal
-    public void RemovalCycle(){
+    public void RemovalCycle1(){
          Node meet = hasCycle(head);
          if(meet == null){
             return;
@@ -97,6 +97,49 @@ public class Cycle_Removal_Algo {
         } 
     }
 
+
+    public void RemovalCycle2(){
+        Node meet= hasCycle(head);
+        if(meet == null){
+            return;
+        }
+
+        int count =1;
+        Node temp = meet;
+        while(temp.next !=meet){
+            count++;
+            temp = temp.next;
+        }
+        Node fast = head;
+        for(int i=0;i<count; i++ ){
+            fast =fast.next;
+        }
+        Node slow =head;
+        while(slow.next != fast.next){
+            slow =slow.next;
+            fast =fast.next;
+        }
+        fast.next = null;
+    
+    }
+
+
+    public void floyedCycleRemoval(){
+
+         Node meet= hasCycle(head);
+        if(meet == null){
+            return;
+        }
+        Node slow = head;
+        Node fast = meet;
+        while(slow.next != fast.next){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        fast.next = null;
+    }
+
+
     public static void main(String[] args)throws Exception {
         Cycle_Removal_Algo cl= new Cycle_Removal_Algo();
         cl.addlast(10);
@@ -108,7 +151,9 @@ public class Cycle_Removal_Algo {
         cl.addlast(70);
         cl.addlast(80);
         cl.CreateCycle();
-        cl.RemovalCycle();
+        // cl.RemovalCycle1();
+       // cl.RemovalCycle2();
+       cl.floyedCycleRemoval();
         cl.Display();
     }
 }

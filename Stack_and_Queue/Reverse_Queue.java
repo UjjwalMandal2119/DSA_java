@@ -2,7 +2,7 @@ package Stack_and_Queue;
 
 public class Reverse_Queue {
     public static void main(String[] args)throws Exception {
-        Queue q= new Queue();
+        Apna_Queue q= new Apna_Queue();
         q.Enqueue(10);
         q.Enqueue(20);
         q.Enqueue(30);
@@ -12,7 +12,7 @@ public class Reverse_Queue {
         Reverse(q);
         q.Display();
     }
-    public static void Reverse(Queue q)throws Exception{
+    public static void Reverse(Apna_Queue q)throws Exception{
      if(q.isEmpty()){
         return;
      }

@@ -1,14 +1,14 @@
 package Stack_and_Queue;
 
-public class Queue {
+public class Apna_Queue {
     protected  int[] arr;
     protected  int front=0;
     private int size=0;
 
-    public Queue(){
+    public Apna_Queue(){
         arr = new int[5];
     }
-    public Queue(int n){
+    public Apna_Queue(int n){
         arr = new int[n];
     }
 
