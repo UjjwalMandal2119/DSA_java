@@ -83,10 +83,21 @@ public class Cycle_Removal_Algo {
          if(meet == null){
             return;
          }
-         
+        Node start =head;
+        while(start != null){
+            Node temp = meet;
+            while(temp.next != meet){
+                if(temp.next ==start){
+                   temp.next=null;
+                   return;
+                }
+                temp=temp.next;
+            }
+            start =start.next;
+        } 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)throws Exception {
         Cycle_Removal_Algo cl= new Cycle_Removal_Algo();
         cl.addlast(10);
         cl.addlast(20);
@@ -96,6 +107,8 @@ public class Cycle_Removal_Algo {
         cl.addlast(60);
         cl.addlast(70);
         cl.addlast(80);
+        cl.CreateCycle();
+        cl.RemovalCycle();
         cl.Display();
     }
 }
