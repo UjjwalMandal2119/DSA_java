@@ -1,5 +1,7 @@
 package Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -89,11 +91,77 @@ public class BinaryTree {
     }
     private int height(Node node){
         if(node == null){
-           return 0;
+           return 0;  // 0 for root =1 and -1 for root =0;
         }
         int left= height(node.left);
         int right= height(node.right);
 
         return Math.max(left, right) +1;
+    }
+
+    //pre order traversal
+
+    public void PreOrder(){
+        PreOrder(this.root);
+        System.out.println();
+    }
+
+    private void PreOrder(Node node){
+        if(node == null){
+            return;
+        }
+        System.out.print(node.val + " ");
+        PreOrder(node.left);
+        PreOrder(node.right);
+    }
+
+    //post order traversal
+
+    public void PostOrder(){
+        PostOrder(this.root);
+        System.out.println();
+    }
+
+    private void PostOrder(Node node){
+        if(node == null){
+            return;
+        }
+        PostOrder(node.left);
+        PostOrder(node.right);
+        System.out.print(node.val + " ");
+    }
+
+    //InOrder Traversal
+
+    public void InOrder(){
+        InOrder(this.root);
+        System.out.println();
+    }
+
+    private void InOrder(Node node){
+        if(node == null){
+            return;
+        }
+        //recursive call
+        InOrder(node.left);
+        System.out.print(node.val +" ");
+        InOrder(node.right);
+    }
+
+    //level order traversal
+    public void LeverOrder(){
+        Queue<Node> q=new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            Node rv =q.poll(); //remove first
+            System.out.print(rv.val + " ");
+            if(rv.left !=null){
+                q.add(rv.left);
+            }
+            if(rv.right != null){
+                q.add(rv.right);
+            }
+        }
+        System.out.println();
     }
 }

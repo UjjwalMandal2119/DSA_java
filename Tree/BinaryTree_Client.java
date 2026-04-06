@@ -6,6 +6,11 @@ public class BinaryTree_Client {
         bt.Display(); 
         System.out.println(bt.find(70));
         System.out.println(bt.max());
+        System.out.println(bt.height());
+        bt.PreOrder();
+        bt.PostOrder();
+        bt.InOrder();
+        bt.LeverOrder();
     }
 }
 // Input

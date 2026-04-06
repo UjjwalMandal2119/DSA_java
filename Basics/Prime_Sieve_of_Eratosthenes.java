@@ -31,6 +31,7 @@ public class Prime_Sieve_of_Eratosthenes {
         for(int i=2; i<prime.length; i++){
             prime[i]=true;
         }
+        //elimination
         for(int i=2; i*i<prime.length; i++){
             if(prime[i] == true){ // i is prime number
               for(int j=2; j*i<prime.length; j++){
