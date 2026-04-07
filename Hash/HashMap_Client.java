@@ -15,6 +15,8 @@ public class HashMap_Client {
         System.out.println(map.containsKey("raj"));
         System.out.println(map.get("Raja"));
         System.out.println(map);
+        System.out.println(map.remove("punit"));
+        System.out.println(map);
 
     }
 }

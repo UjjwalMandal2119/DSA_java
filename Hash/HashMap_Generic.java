@@ -1,9 +1,9 @@
 package Hash;
 
-public class HashMap_Implementation {
-    public class Node{
-        String key;
-        Integer value;
+public class HashMap_Generic<K,V>{
+     public class Node{
+        k key;
+        V value;
         Node next;
     }
 
@@ -18,7 +18,7 @@ public class HashMap_Implementation {
         this(4);
     }
 
-    public void put(String key, Integer value){
+    public void put(k key, V value){
      int bn = hashfun(key);
      Node temp = buk[bn];
      while(temp != null){
@@ -54,7 +54,7 @@ public class HashMap_Implementation {
         }
     }
 
-    public Integer get(String key){
+    public V get(k key){
         int bn = hashfun(key);
          Node temp = buk[bn];
      while(temp != null){
@@ -67,7 +67,7 @@ public class HashMap_Implementation {
      return null; 
     }
 
-    public boolean  containsKey(String key){
+    public boolean  containsKey(k key){
         int bn = hashfun(key);
          Node temp = buk[bn];
      while(temp != null){
@@ -81,7 +81,7 @@ public class HashMap_Implementation {
     }
 
 
-    public Integer remove(String key){
+    public V remove(k key){
         int bn = hashfun(key);
         Node curr = buk[bn];
         Node prev =null;
@@ -107,7 +107,7 @@ public class HashMap_Implementation {
         return curr.value;
     }
 
-    public int hashfun(String key){
+    public int hashfun(k key){
         int idx = key.hashCode()% buk.length;
         if(idx < 0){
             idx +=buk.length;
@@ -116,8 +116,8 @@ public class HashMap_Implementation {
     }
 
     @Override
-    public String toString(){
-        String s ="{";
+    public k toString(){
+        k s ="{";
 
         for(Node temp : buk){
             while(temp != null){
@@ -129,3 +129,7 @@ public class HashMap_Implementation {
         return s + "}";
     }
 }
+
+
+//map main ArrayList lena hoga tab achha se generic banega
+//ye incomplete h
