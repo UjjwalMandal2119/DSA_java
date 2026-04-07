@@ -12,7 +12,7 @@ public class CarsClient {
     //    System.out.println(s.compareTo(s1));
 
         Cars [] arr = new Cars[5];
-        arr[0] = new Cars(200,10, "White");
+        arr[0] = new Cars(200,15, "White");
         arr[1] = new Cars(180,20,"Black" );
         arr[2] = new Cars(360, 050, "Yellow");
         arr[3] = new Cars(520, 30, "Greay");
@@ -25,7 +25,11 @@ public class CarsClient {
           Arrays.sort(arr ,new Comparator<Cars>() {
             @Override
             public int compare(Cars o1, Cars o2){
-                return o1.speed - o2.speed;
+                if(o1.speed == o2.speed){
+                    return o2.price -o1.price;
+                }else{
+                    return o1.speed -o2.speed;
+                }
             }
           });
         Display(arr);
