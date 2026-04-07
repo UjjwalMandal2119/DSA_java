@@ -57,4 +57,8 @@ public class Heap {
         return list.get(0);
     }
 
+    public void Display(){
+        System.out.println(list);
+    }
+
 }
