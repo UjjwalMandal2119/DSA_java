@@ -37,10 +37,10 @@ public class Heap {
         int lci = 2* pi +1;
         int rci = 2 * pi +2;
         int mini =pi;
-        if(list.get(lci) < list.get(mini)){
+        if(lci<list.size() && list.get(lci) < list.get(mini)){
             mini =lci;
         }
-        if(list.get(rci) < list.get(mini)){
+        if(rci < list.size() && list.get(rci) < list.get(mini)){
             mini =rci;
         }
         if(mini != pi){
