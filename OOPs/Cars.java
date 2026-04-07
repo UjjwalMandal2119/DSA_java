@@ -19,6 +19,10 @@ public class Cars implements Comparable<Cars>  {
 
     @Override
     public int compareTo(Cars o){
-        return o.price -this.price;
+        //return o.price -this.price;
+          
+        //return this.speed -o.speed;
+
+        return this.color.compareTo(o.color);
     }
 }
