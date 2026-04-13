@@ -1,3 +1,4 @@
+package Binary_Search;
 //Documentation
 //A question given that we have to satisfy the condition with max possible value
 //condition is (x^k<=n) here user give us k and n we have to return the max possible value of x

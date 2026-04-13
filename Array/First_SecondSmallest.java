@@ -22,11 +22,19 @@ public class First_SecondSmallest {
         //target is to find first smallest first
 
         int firstsmallest=arr[0];
+       int s_small =Integer.MAX_VALUE;
         for(int i=1; i<n ;i++){
             if(arr[i]<firstsmallest){
+                s_small =firstsmallest;
                 firstsmallest =arr[i];
             }
+             if(arr[i] <s_small && arr[i] !=firstsmallest){
+              s_small =arr[i];
         }
-       System.out.println(firstsmallest);
+        }
+      if(s_small==Integer.MAX_VALUE){
+        System.out.println(-1);
+      }
+        
     }
 }

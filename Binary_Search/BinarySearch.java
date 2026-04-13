@@ -1,3 +1,4 @@
+package Binary_Search;
 //for binary search we need sorted data
 //Divide and Conquare , defining lower and higher index and Calulate the mid, 
 //low index=0; and high index =arr.length-1;

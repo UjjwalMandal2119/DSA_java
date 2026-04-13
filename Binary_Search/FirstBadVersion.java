@@ -1,3 +1,4 @@
+package Binary_Search;
 // public class FirstBadVersion {
     //this is a Binary Search Question
 // }
