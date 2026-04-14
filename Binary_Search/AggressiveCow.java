@@ -55,7 +55,7 @@ public class AggressiveCow {
     }
     public static int MinDistance(int [] stall, int noc){
         int low=stall[0];
-        int high= stall[stall.length-1];
+        int high= stall[stall.length-1]-stall[0];
         int ans=0;
         while(low<high){
             int mid=(low+high)/2;
