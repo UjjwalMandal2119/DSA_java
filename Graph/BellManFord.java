@@ -26,15 +26,18 @@ public class BellManFord {
     }
     dis[src] = 0;
     List<EdgePair> ll = AllEdge();
-    for(int i=1; i<=v-1; i++){
+    for(int i=1; i<=v; i++){
         for(EdgePair e : ll){
-            if(dis[e.e2] > dis[e.e1] + e.cost){
+            if(i==v && dis[e.e2] > dis[e.e1] + e.cost){
+                System.out.println("-ve Wt Cycle");
+                return;
+            }else if(dis[e.e2] > dis[e.e1] + e.cost){
                 dis[e.e2] = dis[e.e1] + e.cost;
             }
         }
     }
     for(int i=1; i<dis.length; i++){
-        System.out.println(dis[i] + " ");
+        System.out.print(dis[i] + " ");
     }
    }
 
