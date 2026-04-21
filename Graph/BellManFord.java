@@ -57,7 +57,8 @@ public class BellManFord {
 
    public List<EdgePair> AllEdge(){
     List<EdgePair> ll = new ArrayList<>();
-    for(int e1 : map.get(e1).keySet()){
+    for(int e1 : map.keySet()){
+        for(int e2 : map.get(e1).keySet()){
         int cost = map.get(e1).get(e2);
         ll.add(new EdgePair(e1, e2, cost));
     }
@@ -66,6 +67,14 @@ public class BellManFord {
 }
 
 public static void main(String [] args){
-   
+   BellManFord bf = new BellManFord(5);
+   bf.AddEage(1, 2, 8); 
+   bf.AddEage(1, 3, 4); 
+   bf.AddEage(1, 4, 5); 
+   bf.AddEage(3, 4, -3); 
+   bf.AddEage(4, 5, 4); 
+   bf.AddEage(5, 2, 1); 
+   bf.AddEage(2, 5, -2); 
+   bf.BellManFordAlgo(1);
 }
 }
