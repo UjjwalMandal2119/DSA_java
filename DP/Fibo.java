@@ -17,4 +17,20 @@ public class Fibo {
         int f2= fib(n-2);
         return f1+f2;
     }
+
+    //with the concept of Dynamic Programming
+
+    //Time Complexity O(n)
+    public static int fibTD(int n, int[] dp){
+        if(n==0 ||n==1){
+            return n;
+        }
+        if(dp[n]!=0){            //DP concept yaha par apply hua h
+            return dp[n];
+        }
+
+        int f1 = fibTD(n-1, dp);
+        int f2 = fibTD(n-2, dp);
+        return dp[n]= f1 +f2;
+    }
 }
