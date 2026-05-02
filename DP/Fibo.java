@@ -10,6 +10,7 @@ public class Fibo {
         int [] dp = new int[n+1];
         
         System.out.println(fibTD(n, dp));
+        System.out.println(fibBU(n));
         System.out.println(fib(n));
     }
 
@@ -41,6 +42,7 @@ public class Fibo {
     }
 
     //Bottom-up approach -Tabulation
+     //Time Complexity O(n)
     
     public static int fibBU(int n){
         int [] dp = new int [n+1];
