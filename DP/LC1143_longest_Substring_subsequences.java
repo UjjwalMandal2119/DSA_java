@@ -8,11 +8,11 @@ public class LC1143_longest_Substring_subsequences {
         String s2= "ace";
 
         int [][] dp = new int[s1.length()][s2.length()];
-        for(int i=0; i<dp.length; i++){
-            for(int j=0; j<dp[0].length; j++){
-                dp[i][j]= -1;
-            }
-        }
+        // for(int i=0; i<dp.length; i++){
+        //     for(int j=0; j<dp[0].length; j++){
+        //         dp[i][j]= -1;
+        //     }
+        // }
         for(int [] a :dp){
             Arrays.fill(a, -1);
         }
