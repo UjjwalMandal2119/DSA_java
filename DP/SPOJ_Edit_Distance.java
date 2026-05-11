@@ -78,7 +78,7 @@ public class SPOJ_Edit_Distance {
         if(i==s.length()){
             return t.length()-j;
         }
-        if(j == s.length()){
+        if(j == t.length()){
             return s.length()-i;
         }
         if(dp[i][j]!= -1){
