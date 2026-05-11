@@ -6,6 +6,8 @@ public class LC115_Distinct_Subsequences {
         String t="rabbit";
        System.out.println(DistinctSubsequences(s, t, 0, 0));
     }
+
+    //recursion
     public static int DistinctSubsequences(String s, String t, int i, int j){
         if(t.length()==j){
             return 1;
